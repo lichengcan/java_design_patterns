@@ -29,5 +29,8 @@ package me.zbl.strategy;
 @FunctionalInterface
 public interface TransportationStrategy {
 
+  /**
+   * 通行方式可以有不同的实现
+   */
   void go();
 }

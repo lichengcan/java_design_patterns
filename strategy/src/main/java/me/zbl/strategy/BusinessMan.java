@@ -30,14 +30,26 @@ public class BusinessMan {
 
   private TransportationStrategy strategy;
 
+
+  /**
+   * 构造方法注入通行方式
+   * @param strategy
+   */
   public BusinessMan(TransportationStrategy strategy) {
     this.strategy = strategy;
   }
 
+  /**
+   * 修改通行方式
+   * @param strategy
+   */
   public void changetStrategy(TransportationStrategy strategy) {
     this.strategy = strategy;
   }
 
+  /**
+   * gogogo
+   */
   public void transport() {
     this.strategy.go();
   }
